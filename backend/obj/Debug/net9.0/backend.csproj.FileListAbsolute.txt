@@ -127,3 +127,5 @@ D:\Library Management System\backend\obj\Debug\net9.0\refint\backend.dll
 D:\Library Management System\backend\obj\Debug\net9.0\backend.pdb
 D:\Library Management System\backend\obj\Debug\net9.0\backend.genruntimeconfig.cache
 D:\Library Management System\backend\obj\Debug\net9.0\ref\backend.dll
+D:\Library Management System\backend\bin\Debug\net9.0\backend.staticwebassets.runtime.json
+D:\Library Management System\backend\obj\Debug\net9.0\backend.sourcelink.json

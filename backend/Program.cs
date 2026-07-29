@@ -4,6 +4,10 @@ using backend.Managers;
 using backend.Repositories;
 using Microsoft.EntityFrameworkCore;
 
+// Ensure wwwroot exists so StaticFiles middleware doesn't fail on startup
+var wwwrootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "books");
+Directory.CreateDirectory(wwwrootPath);
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Increase max upload size to 10 MB
