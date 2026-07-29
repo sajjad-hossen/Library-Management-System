@@ -1,0 +1,104 @@
+.borrow-page { padding-top: 0.5rem; }
+
+.page-header-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+.page-header-row h1 { margin-bottom: 0; }
+
+.borrow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .borrow-grid { grid-template-columns: 1fr; }
+}
+
+.borrow-panel { display: flex; flex-direction: column; gap: 1rem; }
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.panel-title h2 { margin-bottom: 0; font-size: 1.15rem; }
+.panel-desc { color: var(--text-secondary); font-size: 0.875rem; margin: 0; }
+
+.form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-field label { font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
+
+/* Alerts */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.alert-success {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #6ee7b7;
+}
+.alert-error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+
+/* Reuse spin from BooksPage */
+.spin { animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Book dropdown */
+.book-select {
+  width: 100%;
+  padding: 0.65rem 0.875rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  appearance: auto;
+}
+.book-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+.book-select option {
+  background: #1e293b;
+  color: var(--text-primary);
+}
+
+/* Loading state inside dropdown area */
+.dropdown-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding: 0.65rem 0;
+}
+
+/* Selected book hint */
+.selected-book-info {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+}
+
